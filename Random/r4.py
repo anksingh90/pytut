@@ -4,6 +4,5 @@ def asgn():
     
     for i in range(5):
         layout = random.randint(0,1)
-        print(f'User : {i}, Layout Assigned : {lst[layout]}') 
- 
-asgn()        
+        print(f'User : {i}, Layout Assigned : {lst[layout]}')
+asgn()
