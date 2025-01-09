@@ -15,7 +15,7 @@ class Electric_car(Car):
     def __init__(self, brand, model, battery_size):
         super().__init__(brand,model)
         self.battery_size = battery_size
-    
+
     def __str__(self):
         return f"{self.full_name()}, Battery Size: {self.battery_size}"
 
