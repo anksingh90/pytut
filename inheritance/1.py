@@ -16,3 +16,4 @@ class Electric_Car(Car):
 
 e1 = Electric_Car("tata","r8",2)
 print(e1.get_brand())
+print(e1.get_brand())
