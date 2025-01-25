@@ -46,6 +46,17 @@ elif (a>30 and a<=100) :
 for i in range (0,10):
     print(a*i)'''
 
+'''str=("hello world !")
+for ch in str :
+    print(ch)'''
+
 a=int(input("enter the no. :"))
-for i in range (1, a+1):
-    print(a)
+permutation = 1
+b=input("do you want to continue or exit ")
+if a > 0:
+    for i in range(1, a+1):
+        permutation = permutation * i
+    print(permutation)
+else:
+    print('incorrect value')
+
