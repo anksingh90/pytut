@@ -1,2 +1,4 @@
-with open ('ex.txt', 'w') as file:
-    write_mode = file.writelines(['this line of text is being added\n','hellohellohelllo\n'])
+import json
+data = {'name': 'Bob', 'age': 25, 'city': 'London'}
+json_string = json.dumps(data)
+print(json_string) # Output: { "name": "Bob", "age": 25, "city": "London" }
