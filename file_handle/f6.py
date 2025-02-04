@@ -1,6 +1,3 @@
-import random as rm
-
-count = 0 
 with open('ex.txt','r') as file:
     read_mode = file.readlines()
     print('read_mode',read_mode)
