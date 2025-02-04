@@ -1,0 +1,1 @@
+# Enter 5 entry from user into txt file
