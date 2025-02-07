@@ -31,8 +31,7 @@ sum=0
 while True:
     ch = int(input('Enter a +ve number to sum, -ve number ends the loop :'))
     if ch>0:
-        print(ch)
         sum=sum+ch
-        print(sum)
     elif ch<0:
         break
+print('Total Sum : ',sum)
