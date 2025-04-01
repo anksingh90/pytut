@@ -1,0 +1,9 @@
+{
+    "name": "MySQL Codespace",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+      "mysql": "latest"
+    },
+    "forwardPorts": [3306],
+    "postCreateCommand": "sudo service mysql start"
+  }
