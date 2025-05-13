@@ -1,0 +1,9 @@
+f=open("ps.txt","w")
+a=input("n1")
+b=input("n2")
+c=input("n3")
+d=input("n4")
+e=input("n5")
+lst=[a,b,c,d,e]
+f.writelines(lst)
+f.close()
