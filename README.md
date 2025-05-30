@@ -34,4 +34,21 @@ Questions
   - Write a Python program to count the number of digits in a given number.
 
 </details>
+<details>
+  <summary>Loop Statement Questions</summary>
+  
+  ## For/While Statement Questions !
 
+  - A program that input an integer in range 0 - 999, then print if the integer is entered is a 1 / 2 / 3 digit number.
+  - WAP to print square root of every alternate number in range of 1 to 18 (i ** 0.5).
+  - Write a program that multiplies two numbers without using the * operator, using repeated addition
+  - Implement a Python program to calculate the sum of the first n natural numbers using a while loop.
+  - Write a Python program to print the multiplication table of a given number using a for loop.
+  - Create a Python program to find the factorial of a number using a while loop.
+  - Write a Python program to print the Fibonacci sequence up to a given number of terms.
+  - Implement a Python program to check if a number is prime or not.
+  - Write a Python program to reverse a given number.
+  - Write a python program to accept two integers upto 2 digit and then swap both.
+  - Write a Python program to count the number of digits in a given number.
+
+</details>
