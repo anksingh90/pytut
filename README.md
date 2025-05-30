@@ -35,20 +35,18 @@ Questions
 
 </details>
 <details>
-  <summary>Loop Statement Questions</summary>
+  <summary>Function In Python</summary>
   
-  ## For/While Statement Questions !
+  ## Practice Questions !
 
-  - A program that input an integer in range 0 - 999, then print if the integer is entered is a 1 / 2 / 3 digit number.
-  - WAP to print square root of every alternate number in range of 1 to 18 (i ** 0.5).
-  - Write a program that multiplies two numbers without using the * operator, using repeated addition
-  - Implement a Python program to calculate the sum of the first n natural numbers using a while loop.
-  - Write a Python program to print the multiplication table of a given number using a for loop.
-  - Create a Python program to find the factorial of a number using a while loop.
-  - Write a Python program to print the Fibonacci sequence up to a given number of terms.
-  - Implement a Python program to check if a number is prime or not.
-  - Write a Python program to reverse a given number.
-  - Write a python program to accept two integers upto 2 digit and then swap both.
-  - Write a Python program to count the number of digits in a given number.
-
+  - 1. String Length Counter : Write a function count_characters that takes a string and returns the number of characters & words in it.
+  - 2. Maximum Finder : Create a function find_max that takes three numbers as parameters and returns the largest one.
+  - 3. Password Validator : Create a function is_valid_password that takes a string and returns True if it's at least 8 characters long, False otherwise.Write a program that multiplies two numbers without using the * operator, using repeated addition
+  - 4. List Average : Create a function calculate_average that takes a list of numbers and returns their average.
+  - 5. List Element Finder : Create a function find_element that takes a list and a value, returns True if the value exists in the list, False otherwise.
+  - 6. String Case Converter : Write a function toggle_case that takes a string and returns it with all uppercase letters converted to lowercase and vice versa.
+  - 7. Function with Default Parameters : Create a function create_profile that takes name, age, and city (with default "Unknown") as parameters, and returns a formatted string: "Name: John, Age: 25, City: NYC"
+  - 8. List Manipulation with Multiple Returns : Write a function analyze_numbers that takes a list of numbers and returns a tuple containing (sum, average, minimum, maximum) of the list.
+  - 9. Nested Function Implementation : Create a function math_operations that contains inner functions for add, subtract, multiply, and divide. The main function should take two numbers and an operation string, then call the appropriate inner function.
+  - 10. Dictionary Processing Function : Create a function student_grades that takes a dictionary of student names and their grades, and returns a new dictionary with only students who have grades above 75.
 </details>
