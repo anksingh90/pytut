@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="FundaClass Academy - Empowering minds and shaping futures through personalized learning for students in grades 9-12. Join our transformative educational experience today."/>
+    <meta name="keywords" content="education, academy, grades 9-12, personalized learning, student success"/>
+    
+    <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+    <link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    
+    <title>FundaClass Academy - Empowering Minds, Shaping Futures</title>
+    <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Focus styles for better accessibility */
+        .focus-visible:focus {
+            outline: 2px solid #1978e5;
+            outline-offset: 2px;
+        }
+        
+        /* Animation for cards */
+        .grade-card {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .grade-card:hover {
+            transform: translateY(-4px);
+        }
+        
+        /* Form validation styles */
+        .form-input:invalid {
+            border-color: #ef4444;
+        }
+        
+        .form-input:valid {
+            border-color: #10b981;
+        }
+        
+        /* Hero Section Custom Animations */
+        @keyframes gradient {
+            0%, 100% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+        }
+        
+        @keyframes gradient-reverse {
+            0%, 100% { background-position: 100% 50%; }
+            50% { background-position: 0% 50%; }
+        }
+        
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .animate-gradient {
+            background-size: 200% 200%;
+            animation: gradient 4s ease infinite;
+        }
+        
+        .animate-gradient-reverse {
+            background-size: 200% 200%;
+            animation: gradient-reverse 4s ease infinite;
+        }
+        
+        .animate-spin-slow {
+            animation: spin-slow 20s linear infinite;
+        }
+        
+        .animate-float {
+            animation: float 6s ease-in-out infinite;
+        }
+        
+        /* Floating particles animation */
+        .floating-particle {
+            animation: float 3s ease-in-out infinite;
+        }
+        
+        .floating-particle:nth-child(2) {
+            animation-delay: -1s;
+        }
+        
+        .floating-particle:nth-child(3) {
+            animation-delay: -2s;
+        }
+        
+        .floating-particle:nth-child(4) {
+            animation-delay: -0.5s;
+        }
+        
+        .floating-particle:nth-child(5) {
+            animation-delay: -1.5s;
+        }
+    </style>
+</head>
+
+<body class="bg-[#111922]">
+    <div class="relative flex size-full min-h-screen flex-col dark justify-between group/design-root overflow-x-hidden" style='font-family: Manrope, "Noto Sans", sans-serif;'>
+        
+        <!-- Skip to main content link for accessibility -->
+        <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-[#1978e5] text-white px-4 py-2 rounded-md z-50">
+            Skip to main content
+        </a>
+        
+        <main id="main-content">
+            <!-- Hero Section -->
+            <section class="relative @container min-h-screen overflow-hidden" role="banner">
+                <!-- Animated Background -->
+                <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-purple-900/20 to-slate-900 z-0"></div>
+                
+                <!-- Floating Particles -->
+                <div class="absolute inset-0 z-10">
+                    <div class="floating-particle absolute top-20 left-10 w-2 h-2 bg-blue-400/30 rounded-full animate-pulse"></div>
+                    <div class="floating-particle absolute top-40 right-20 w-3 h-3 bg-purple-400/40 rounded-full animate-bounce"></div>
+                    <div class="floating-particle absolute bottom-60 left-20 w-1 h-1 bg-cyan-400/50 rounded-full animate-ping"></div>
+                    <div class="floating-particle absolute bottom-40 right-40 w-2 h-2 bg-indigo-400/30 rounded-full animate-pulse"></div>
+                    <div class="floating-particle absolute top-60 left-1/2 w-1 h-1 bg-blue-300/40 rounded-full animate-bounce"></div>
+                </div>
+                
+                <!-- Geometric Shapes -->
+                <div class="absolute inset-0 z-10 opacity-10">
+                    <div class="absolute top-20 right-20 w-32 h-32 border border-blue-400/20 rounded-full animate-spin-slow"></div>
+                    <div class="absolute bottom-20 left-20 w-24 h-24 border border-purple-400/20 rounded-lg rotate-45 animate-pulse"></div>
+                    <div class="absolute top-1/2 left-10 w-16 h-16 bg-gradient-to-r from-cyan-400/10 to-blue-400/10 rounded-full animate-bounce"></div>
+                </div>
+                
+                <!-- Grid Pattern Overlay -->
+                <div class="absolute inset-0 z-5 opacity-5" 
+                     style="background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.15) 1px, transparent 0); background-size: 50px 50px;"></div>
+                
+                <!-- Main Content -->
+                <div class="relative z-20 flex min-h-screen flex-col items-center justify-center p-6 text-center">
+                    
+                    <!-- Glowing Badge -->
+                    <div class="mb-8 inline-flex items-center px-4 py-2 rounded-full bg-gradient-to-r from-blue-500/10 to-purple-500/10 border border-blue-400/20 backdrop-blur-sm">
+                        <div class="w-2 h-2 bg-green-400 rounded-full animate-pulse mr-3"></div>
+                        <span class="text-blue-200 text-sm font-medium">Transforming Education Since 2020</span>
+                    </div>
+                    
+                    <!-- Main Title with Gradient -->
+                    <div class="flex flex-col gap-6 mb-8">
+                        <h1 class="text-6xl @[480px]:text-7xl @[768px]:text-8xl font-black leading-none tracking-tight">
+                            <span class="block bg-gradient-to-r from-white via-blue-100 to-purple-200 bg-clip-text text-transparent animate-gradient">
+                                Empowering
+                            </span>
+                            <span class="block bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent animate-gradient-reverse">
+                                Minds
+                            </span>
+                            <span class="block text-white/90 text-4xl @[480px]:text-5xl @[768px]:text-6xl font-light mt-2">
+                                Shaping Futures
+                            </span>
+                        </h1>
+                        
+                        <!-- Decorative Line -->
+                        <div class="flex items-center justify-center gap-4">
+                            <div class="h-px w-16 bg-gradient-to-r from-transparent to-blue-400"></div>
+                            <div class="w-2 h-2 bg-blue-400 rounded-full animate-pulse"></div>
+                            <div class="h-px w-16 bg-gradient-to-l from-transparent to-purple-400"></div>
+                        </div>
+                    </div>
+                    
+                    <!-- Enhanced Description -->
+                    <div class="max-w-3xl mb-12">
+                        <p class="text-gray-300 text-lg @[480px]:text-xl leading-relaxed font-light">
+                            At <span class="text-blue-300 font-medium">FundaClass Academy</span>, we're dedicated to providing a 
+                            <span class="text-transparent bg-gradient-to-r from-purple-300 to-blue-300 bg-clip-text font-medium">transformative educational experience</span> 
+                            for students in grades 9-12.
+                        </p>
+                        <p class="text-gray-400 text-base @[480px]:text-lg leading-relaxed mt-4">
+                            Our innovative approach combines personalized learning, expert guidance, and a supportive community to help students excel academically and prepare for future success.
+                        </p>
+                    </div>
+                    
+                    <!-- Enhanced CTA Buttons -->
+                    <div class="flex flex-col @[480px]:flex-row gap-4 items-center">
+                        <button class="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-semibold rounded-2xl bg-gradient-to-r from-blue-600 to-purple-600 text-white shadow-2xl hover:shadow-blue-500/25 focus-visible transition-all duration-500 transform hover:scale-105 hover:-translate-y-1 overflow-hidden"
+                                onclick="document.getElementById('contact-section').scrollIntoView()">
+                            <!-- Button Shine Effect -->
+                            <div class="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-1000"></div>
+                            <span class="relative z-10 flex items-center gap-2">
+                                Join Class Today
+                                <svg class="w-5 h-5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"/>
+                                </svg>
+                            </span>
+                        </button>
+                        
+                        <button class="group inline-flex items-center justify-center px-8 py-4 text-lg font-medium rounded-2xl border-2 border-white/20 text-white backdrop-blur-sm hover:bg-white/10 hover:border-white/30 focus-visible transition-all duration-300 transform hover:scale-105"
+                                onclick="document.getElementById('programs').scrollIntoView()">
+                            <span class="flex items-center gap-2">
+                                Explore Programs
+                                <svg class="w-5 h-5 transition-transform group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    
+                    <!-- Stats Section -->
+                    <div class="mt-16 grid grid-cols-3 gap-8 @[768px]:gap-16">
+                        <div class="text-center">
+                            <div class="text-3xl @[480px]:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
+                                500+
+                            </div>
+                            <div class="text-gray-400 text-sm @[480px]:text-base font-medium mt-1">
+                                Students
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl @[480px]:text-4xl font-bold bg-gradient-to-r from-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                                95%
+                            </div>
+                            <div class="text-gray-400 text-sm @[480px]:text-base font-medium mt-1">
+                                Success Rate
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <div class="text-3xl @[480px]:text-4xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+                                50+
+                            </div>
+                            <div class="text-gray-400 text-sm @[480px]:text-base font-medium mt-1">
+                                Expert Teachers
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Scroll Indicator -->
+                <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20">
+                    <div class="flex flex-col items-center animate-bounce">
+                        <span class="text-gray-400 text-xs mb-2">Scroll to explore</span>
+                        <div class="w-6 h-10 border-2 border-gray-400/30 rounded-full flex justify-center">
+                            <div class="w-1 h-3 bg-gradient-to-b from-blue-400 to-transparent rounded-full mt-2 animate-pulse"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Grade Programs Section -->
+            <section class="flex flex-col gap-12 px-6 py-16 @container bg-[#1a2431]" id="programs">
+                <div class="flex flex-col gap-5 text-center items-center">
+                    <h2 class="text-white text-4xl font-bold leading-tight tracking-tight @[480px]:text-5xl max-w-2xl">
+                        Personalized Learning for Every Grade
+                    </h2>
+                    <p class="text-gray-300 text-lg font-normal leading-relaxed max-w-2xl">
+                        Explore our tailored programs designed to meet the unique needs of students in grades 9, 10, 11, and 12. Each program offers a comprehensive curriculum, personalized support, and resources to help students thrive.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 @[480px]:grid-cols-2 gap-6 @[768px]:grid-cols-4">
+                    
+                    <article class="grade-card flex flex-col gap-4 p-5 bg-[#243447] rounded-xl shadow-lg hover:shadow-2xl focus-within:ring-2 focus-within:ring-[#1978e5]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC4ILx0VJ64qyF3QSk_vhDNVKpSJRRVXFEr58HazNsOUm4oM_NVHNQ1AQV0mNrIB42QndiJTsUp8t7rCdqfej21gWY0uAaJRDm_zAkPn8S6iUGPJckcyt0dwELOjTUrzSs9tgtEUDnPXE1Z7cDlVGxc5ajWitSTmaqeYGsq6xDoTD9PrVLicr-FZXGGsc3cUM2u5wWfrw_smb8LR10p5akjFCVdeoIoIM2dt3cToVq_bJ9P_HpWBBY_b5aKHuDRPLaa795CXlsCpaj3");'
+                             role="img" aria-label="Class 9 students engaged in foundational learning activities"></div>
+                        <div>
+                            <h3 class="text-white text-xl font-semibold leading-snug">Class 9</h3>
+                            <p class="text-gray-400 text-base font-normal leading-relaxed">
+                                Foundational concepts and skills to build a strong academic base
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="grade-card flex flex-col gap-4 p-5 bg-[#243447] rounded-xl shadow-lg hover:shadow-2xl focus-within:ring-2 focus-within:ring-[#1978e5]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD3js-CsGS3R0PyBzXQUzG2JOUPX0LVTd2FrqD_Cqz_fvH-vSX6LBgq5I3XO7MYJLqeThwz4i0usSws7wRW0EAw0HxQRxrgIfA9WcqPVVlg1NB1bqyAcPgf44yhLWnBfBwfjM8PBQK8nyxrUyBk0kFRXlPwFbTFs6LxgfiXzap8b8tvlHksMiPVghkDZ2P-ghEH_wmWG3woKSgnsB4rQuwUhJ7McUSDKKXICTYBCddPAU5ZfVX0bR34vhOlNJ2mfEKoVJMKM245TkoU");'
+                             role="img" aria-label="Class 10 students working on advanced topics and critical thinking exercises"></div>
+                        <div>
+                            <h3 class="text-white text-xl font-semibold leading-snug">Class 10</h3>
+                            <p class="text-gray-400 text-base font-normal leading-relaxed">
+                                Advanced topics and critical thinking skills for academic excellence
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="grade-card flex flex-col gap-4 p-5 bg-[#243447] rounded-xl shadow-lg hover:shadow-2xl focus-within:ring-2 focus-within:ring-[#1978e5]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB1aUp79t-adBkahBLK7M1iWN8leHGdz3OP02G7Lmoq9i86iBuzxB-ddJtSjFdNyDKyDAfizK6txkA569aUBYlYNh49XhUVNagT5PrYb4lqBi8SMpJfiWH5IPaKsZGvBPNlwWRE5kbRMvytFmTyZkv4cJ9-XpW8KcEoO4wUY9tPlWH608mox25aVxJaKOIURdQDxeVgS9h9jWMH9GDsksLiODe7sXGCyZ5LwzJ7IKaHUo34DovVu15VZ7ULsIZdUPa8Oucafh-W36RO");'
+                             role="img" aria-label="Class 11 students preparing for specialized subjects and competitive exams"></div>
+                        <div>
+                            <h3 class="text-white text-xl font-semibold leading-snug">Class 11</h3>
+                            <p class="text-gray-400 text-base font-normal leading-relaxed">
+                                Specialized subjects and comprehensive exam preparation strategies
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="grade-card flex flex-col gap-4 p-5 bg-[#243447] rounded-xl shadow-lg hover:shadow-2xl focus-within:ring-2 focus-within:ring-[#1978e5]">
+                        <div class="w-full bg-center bg-no-repeat aspect-[16/10] bg-cover rounded-lg" 
+                             style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA-HZsLcdpY6MJNS-Vs1JE4tY8q3lZEARU6vgDcpDsQcIGFHjAZB8M-IGhGKoiQIMFYqeikKrh3QXUn3XAPUXMQWNpAP1fC8xcxHbLJ3CoFQfSsKDgO81nL-cSwtGgv-vNt48WgYIEU-U1ROtGfo0P1BprsF9d0cOmzC84SbBIP6e-9_ooUIAv2hGxuZmapTEVTHt8HxNOX_xuux943Y6jI3XXp7-m6FgxCFTK0adkfgFWle3Jxtf_J1434I8F2kDpHDdCh1Jr0jf3t");'
+                             role="img" aria-label="Class 12 students focusing on college readiness and career exploration"></div>
+                        <div>
+                            <h3 class="text-white text-xl font-semibold leading-snug">Class 12</h3>
+                            <p class="text-gray-400 text-base font-normal leading-relaxed">
+                                College readiness and career exploration for future success
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Contact Section -->
+            <section class="@container bg-[#111922]" id="contact-section">
+                <div class="flex flex-col items-center justify-center gap-8 px-6 py-16 text-center @[480px]:gap-10 @[480px]:px-10 @[480px]:py-24">
+                    <div class="flex flex-col gap-4">
+                        <h2 class="text-white text-4xl font-bold leading-tight tracking-tight @[480px]:text-5xl max-w-xl">
+                            Get in Touch
+                        </h2>
+                        <p class="text-gray-300 text-lg font-normal leading-relaxed max-w-xl">
+                            Have questions or want to learn more? Reach out to our team, and we'll be happy to assist you.
+                        </p>
+                    </div>
+                    
+                    <form class="flex w-full max-w-lg flex-col sm:flex-row gap-3 sm:gap-0" onsubmit="handleFormSubmit(event)" novalidate>
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input 
+                            id="email"
+                            name="email"
+                            type="email" 
+                            required
+                            class="form-input flex-grow resize-none overflow-hidden rounded-lg sm:rounded-r-none border-2 border-[#243447] bg-[#243447] text-white h-14 placeholder:text-gray-400 px-4 text-lg font-normal leading-normal focus:ring-2 focus:ring-[#1978e5] focus:border-[#1978e5] transition-all duration-300" 
+                            placeholder="Your Email Address"
+                            aria-describedby="email-error"/>
+                        
+                        <button 
+                            type="submit"
+                            class="flex items-center justify-center rounded-lg sm:rounded-l-none h-14 px-8 text-lg font-semibold bg-[#1978e5] text-white shadow-lg hover:bg-blue-500 focus-visible transition-all duration-300 transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                            <span class="truncate">Contact Us</span>
+                        </button>
+                        
+                        <div id="email-error" class="hidden text-red-400 text-sm mt-2 w-full text-left sm:text-center" role="alert"></div>
+                        <div id="success-message" class="hidden text-green-400 text-sm mt-2 w-full text-left sm:text-center" role="status"></div>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-[#0D131A] py-8 text-center" role="contentinfo">
+            <p class="text-gray-400 text-sm">
+                © <span id="current-year">2025</span> FundaClass Academy. All rights reserved.
+            </p>
+            <nav class="mt-4" aria-label="Footer navigation">
+                <ul class="flex justify-center gap-6 text-sm">
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 focus-visible">Privacy Policy</a></li>
+                    <li><a href="#" class="text-gray-400 hover:text-white transition-colors duration-300 focus-visible">Terms of Service</a></li>
+                    <li><a href="#contact-section" class="text-gray-400 hover:text-white transition-colors duration-300 focus-visible">Contact</a></li>
+                </ul>
+            </nav>
+        </footer>
+    </div>
+
+    <script>
+        // Update copyright year dynamically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Form submission handler
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const form = event.target;
+            const emailInput = form.querySelector('#email');
+            const errorDiv = form.querySelector('#email-error');
+            const successDiv = form.querySelector('#success-message');
+            const submitBtn = form.querySelector('button[type="submit"]');
+            
+            // Reset previous states
+            errorDiv.classList.add('hidden');
+            successDiv.classList.add('hidden');
+            emailInput.classList.remove('border-red-400', 'border-green-400');
+            
+            // Basic email validation
+            const email = emailInput.value.trim();
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            
+            if (!email) {
+                showError('Please enter your email address.');
+                return;
+            }
+            
+            if (!emailPattern.test(email)) {
+                showError('Please enter a valid email address.');
+                return;
+            }
+            
+            // Simulate form submission
+            submitBtn.disabled = true;
+            submitBtn.innerHTML = '<span class="truncate">Sending...</span>';
+            
+            setTimeout(() => {
+                emailInput.classList.add('border-green-400');
+                successDiv.textContent = 'Thank you! We\'ll get back to you soon.';
+                successDiv.classList.remove('hidden');
+                
+                // Reset form
+                form.reset();
+                submitBtn.disabled = false;
+                submitBtn.innerHTML = '<span class="truncate">Contact Us</span>';
+                
+                setTimeout(() => {
+                    successDiv.classList.add('hidden');
+                    emailInput.classList.remove('border-green-400');
+                }, 5000);
+            }, 1500);
+            
+            function showError(message) {
+                emailInput.classList.add('border-red-400');
+                errorDiv.textContent = message;
+                errorDiv.classList.remove('hidden');
+                emailInput.focus();
+            }
+        }
+        
+        // Smooth scroll for internal links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+        
+        // Add loading animation for grade cards
+        window.addEventListener('load', () => {
+            const cards = document.querySelectorAll('.grade-card');
+            cards.forEach((card, index) => {
+                setTimeout(() => {
+                    card.style.opacity = '0';
+                    card.style.transform = 'translateY(20px)';
+                    card.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+                    
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, 100);
+                }, index * 150);
+            });
+        });
+    </script>
+</body>
+</html>
