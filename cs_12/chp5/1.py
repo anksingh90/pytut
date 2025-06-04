@@ -1,7 +1,1 @@
-f=open("data.txt","r")
-x=f.readlines()
-
-for i in x :
-    print(i,end='')
-print()
-f.close()
+# Read the content of a file named data.txt and print it to the console.
