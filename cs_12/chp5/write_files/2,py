@@ -1,0 +1,9 @@
+# write 3 students name into data.txt using write()
+
+f=open('data.txt','w')
+for i in range(3):
+    stu=input("enter the name :")
+    f.write(stu)
+
+print('info added !')
+f.close()
