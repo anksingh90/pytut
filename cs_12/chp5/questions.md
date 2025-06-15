@@ -1,0 +1,52 @@
+# Practice Questions
+
+## Question 1: Student Records Management System
+
+Write a **menu-driven Python program** to manage student records with the following specifications:
+
+### 📋 Requirements
+
+#### 1. Display Menu
+- Continuously display a user-friendly menu with these options:
+  - **Option 1:** Add student details
+  - **Option 2:** Exit
+
+#### 2. User Input Handling
+- When user selects **Option 1:**
+  - Prompt for student's **roll number**
+  - Prompt for student's **name**
+  - Prompt for student's **marks**
+
+#### 3. File Operations
+- Open file `marks.txt` in **write mode**
+- For each student record:
+  - Write details as comma-separated values
+  - Format: `roll_number,name,marks`
+  - Example: `101,Rohan,85`
+  - Each record on a **new line**
+
+#### 4. Program Termination
+- Program exits gracefully when user selects **Option 2**
+
+#### 5. Code Structure Recommendations
+- Implement a `get_student_details()` function to handle student data input
+- Use proper error handling for file operations
+- Validate user input where appropriate
+
+### 💡 Implementation Tips
+- Use a `while` loop for the menu system
+- Consider input validation for marks (numeric values)
+- Handle potential file I/O exceptions
+- Provide clear user prompts and feedback
+
+### 📝 Expected Output Format
+```
+marks.txt content example:
+101,Rohan,85
+102,Priya,92
+103,Amit,78
+```
+
+---
+
+*Good luck with your implementation! Remember to test your program thoroughly with different inputs.*
