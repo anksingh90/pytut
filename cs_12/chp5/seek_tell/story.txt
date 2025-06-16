@@ -1,0 +1,3 @@
+The first line tells a tale.
+The second line is a friend.
+The third line makes it end.
