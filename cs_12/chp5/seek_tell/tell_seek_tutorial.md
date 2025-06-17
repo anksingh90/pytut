@@ -71,7 +71,25 @@ with open('sample.txt', 'r') as f:
 
 ### Example 3: Seeking from different reference points
 - **Syntax**: `file_object.seek(offset, whence)`
+      - `f.seek(0, 2)  # Move to end of file`
+- **offset** : The number of bytes to move the file pointer.
+      -  It can be positive (move forward) or negative (move backward).
+- **whence** : Whence (or reference position): The starting point from where the offset is calculated
+- `whence` parameter -
+   - `0` (or `os.SEEK_SET`): The beginning of the file (absolute positioning).
+   - `1` (or `os.SEEK_CUR`): The current position (relative positioning).
+   - `2` (or `os.SEEK_END`): The end of the file (relative positioning).
 
+**Examples** -
+   - f.seek(0, 1): Stays at the current file position.
+   - f.seek(0, 2): Moves to the end of the file.
+   - f.seek(10, 2): Moves 10 bytes beyond the end of the file.
+   - f.seek(10, 1): Moves 10 bytes forward from the current file position.
+   - f.seek(10, -2): Invalid, raises ValueError due to invalid whence value.
+   - f.seek(10, -1): Invalid, raises ValueError due to invalid whence value.
+   - f.seek(10, 0): Moves to the 10th byte from the beginning of the file.
+   - f.seek(10, 1): Moves 10 bytes forward from the current file position.
+   - f.seek(-10, 2): Moves 10 bytes before the end of the file.
 
 ```python
 with open('sample.txt', 'r') as f:
