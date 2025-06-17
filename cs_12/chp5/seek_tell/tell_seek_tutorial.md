@@ -70,6 +70,8 @@ with open('sample.txt', 'r') as f:
 ## Advanced Examples
 
 ### Example 3: Seeking from different reference points
+- **Syntax**: `file_object.seek(offset, whence)`
+
 
 ```python
 with open('sample.txt', 'r') as f:
