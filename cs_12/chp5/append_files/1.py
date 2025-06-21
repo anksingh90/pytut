@@ -7,21 +7,17 @@ def add_task():
     except FileNotFoundError:
         print("No tasks.txt file found !")
 
-
 def view_task():
     f=open('tasks.txt','r')
     data=f.readlines()
     for i in range(len(data)):
         print(f"{i+1}.{data[i]}")
     f.close()
-    
 
 def edit_task():
     view_task()
     f=open('tasks.txt','a')
     f.read()
-    
-
 
 def menu():
     print("---TASK MANAGER MENU---")
@@ -31,7 +27,6 @@ def menu():
         print("3. Edit A Task")
         print("4. Exit")
         ch=input("enter your choice :")
-
         if ch=='1':
             add_task()
         elif ch=='2':
