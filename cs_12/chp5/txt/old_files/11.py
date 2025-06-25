@@ -1,8 +1,7 @@
-object =open('data.txt', 'r')
-print(object)
-print("Name of File:",object.name)
-print("Mode of File:",object.mode)
-print("File readable :",object.readable())
-print("File closed:",object.closed)
-object.close()
-print("File closed:",object.closed, object.name)
+import csv
+
+my_connection = open("data.csv","r",newline='\r\n')
+obj = csv.reader(my_connection)
+
+for i in obj:
+    print(i)
