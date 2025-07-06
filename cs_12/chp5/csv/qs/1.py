@@ -5,7 +5,13 @@ Now, write a Python program to:
 - Print the result as a formatted table
 '''
 import csv
-f=open('stu.csv','r')
-obj=csv.reader(f)
+myconn=open('stu.csv','r')
+obj=csv.reader(myconn, delimiter='\t')
+count = 0
 for i in obj:
-    print(i)
+    if count == 0:
+        print(', '.join(i),'Avg Marks')
+        count = count + 1
+    else:
+        avg = (int(i[2]) + int(i[3]) + int(i[4]))/3
+        print(' '.join(i),' \t ',int(avg))
