@@ -1,6 +1,8 @@
+# reading data from data.csv file.
+
 import csv
 
-f=open('extension.csv','r')
+f=open('data.csv','r')
 
 obj= csv.reader(f, delimiter=',')
 print(obj)
