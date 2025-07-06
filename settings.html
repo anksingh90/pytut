@@ -1,0 +1,140 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Space+Grotesk%3Awght%40400%3B500%3B700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #f3d2d2;
+        --secondary-color: #f1e9e9;
+        --text-primary: #191010;
+        --text-secondary: #4a4a4a;
+        --background-color: #fbf9f9;
+      }
+      body {
+        font-family: "Space Grotesk", "Noto Sans", sans-serif;
+      }
+      .material-icons {
+        font-size: 24px;
+        color: var(--text-primary);
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-[var(--background-color)] text-[var(--text-primary)]">
+<div class="relative flex size-full min-h-screen flex-col justify-between group/design-root overflow-x-hidden">
+<div>
+<header class="flex items-center border-b border-[var(--secondary-color)] bg-[var(--background-color)] p-4 sticky top-0 z-10">
+<button id="backBtn" class="p-2 -ml-2">
+<span class="material-icons">arrow_back_ios_new</span>
+</button>
+<script>
+  document.getElementById('backBtn').addEventListener('click', function() {
+    window.location.href = '/index2.html';
+  });
+</script>
+<h1 class="text-xl font-bold leading-tight tracking-[-0.015em] flex-1 text-center pr-8">Settings</h1>
+</header>
+<main class="divide-y divide-[var(--secondary-color)]">
+<section class="py-4">
+<h2 class="text-lg font-semibold leading-tight tracking-[-0.015em] px-6 pb-3 pt-2 text-[var(--text-secondary)]">Account</h2>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">person_outline</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Manage Account</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">lock_outline</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Change Password</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+</section>
+<section class="py-4">
+<h2 class="text-lg font-semibold leading-tight tracking-[-0.015em] px-6 pb-3 pt-2 text-[var(--text-secondary)]">Notifications</h2>
+<div class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">notifications_none</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Push Notifications</p>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[var(--primary-color)]/50 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[var(--primary-color)]"></div>
+</label>
+</div>
+<div class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">mail_outline</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Email Notifications</p>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[var(--primary-color)]/50 rounded-full peer peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[var(--primary-color)]"></div>
+</label>
+</div>
+</section>
+<section class="py-4">
+<h2 class="text-lg font-semibold leading-tight tracking-[-0.015em] px-6 pb-3 pt-2 text-[var(--text-secondary)]">Privacy</h2>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">shield_outlined</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Privacy Settings</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">block</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Blocked Users</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+</section>
+<section class="py-4">
+<h2 class="text-lg font-semibold leading-tight tracking-[-0.015em] px-6 pb-3 pt-2 text-[var(--text-secondary)]">App Information</h2>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">info_outline</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">About</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">article_outlined</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Terms of Service</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons">privacy_tip_outlined</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate">Privacy Policy</p>
+<span class="material-icons text-[var(--text-secondary)]">chevron_right</span>
+</a>
+</section>
+<section class="py-4">
+<a class="flex items-center gap-4 bg-transparent hover:bg-[var(--secondary-color)]/50 px-6 py-3.5 transition-colors duration-150" href="#">
+<div class="flex items-center justify-center rounded-lg bg-[var(--secondary-color)] shrink-0 size-10">
+<span class="material-icons text-red-600">logout</span>
+</div>
+<p class="text-base font-medium leading-normal flex-1 truncate text-red-600">Log Out</p>
+</a>
+</section>
+</main>
+</div>
+<div class="pb-5 bg-[var(--background-color)]"></div>
+</div>
+
+</body></html>
